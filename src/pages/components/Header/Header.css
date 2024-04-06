@@ -1,0 +1,14 @@
+.header_container{
+  width:100%;
+} 
+.header_container-item{
+  display:flex;
+  gap: 30px;
+}
+.header_container-item li
+{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
