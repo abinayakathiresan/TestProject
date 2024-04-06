@@ -14,7 +14,7 @@ const calculateLowRankStudent = (name) => {
             return item.mark < 100;
     });
 }
-
+// if you click on increment button, then "Calculating High mark " wont console log after futher rendering.
 const ExampleUseMemo = () => {
     
     const [count, setCount] = useState(0);
