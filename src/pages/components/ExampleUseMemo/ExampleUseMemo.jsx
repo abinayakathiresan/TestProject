@@ -19,7 +19,7 @@ const ExampleUseMemo = () => {
     
     const [count, setCount] = useState(0);
     const name = "testname";
-    const hightStudentWithMemo =  useMemo(() => calculateHighRankStudent(name),[name]);
+    const hightStudentWithMemo =  useMemo(() => {return calculateHighRankStudent(name)},[name]);
     const lowStudent =    calculateLowRankStudent(name) ;
 
     
