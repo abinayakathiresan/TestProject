@@ -5,6 +5,7 @@ import Home from "./pages/components/Home/Home";
 import Fees from "./pages/components/Fees/Fees";
 import ExampleUseMemo from "./pages/components/ExampleUseMemo/ExampleUseMemo";
 import ExampleUseCallback from "./pages/components/ExampleUseCallback/ExampleUseCallback";
+import CounterContextFn from "./pages/components/CouterContext/CouterContextFn";
 
 
 const RouteCom = ()=> {
@@ -16,6 +17,7 @@ const RouteCom = ()=> {
      <Route path = "/example-use-callback" element = {<ExampleUseCallback/>} exact = {true}/>
      
       <Route path = "/contact" element = {<Contact/>} exact = {true}/>
+      <Route path = "/context" element = {<CounterContextFn/>} exact = {true}/>
       <Route path = "/" element = {<Home/>} exact = {true}/>
       <Route path="*" element={<div>Page not found</div>} />
   </Routes>
