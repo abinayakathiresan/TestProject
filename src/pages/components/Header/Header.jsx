@@ -25,6 +25,11 @@ const Header = () => {
           <li>
             <NavLink to="/context">Context</NavLink>
           </li>
+          <li>
+            <NavLink to="/feescontext/add">Fees Context</NavLink>
+          </li><li>
+            <NavLink to="/feeslist">Context</NavLink>
+          </li>
         </ul>
       </div>
     </div>

@@ -6,6 +6,9 @@ import Fees from "./pages/components/Fees/Fees";
 import ExampleUseMemo from "./pages/components/ExampleUseMemo/ExampleUseMemo";
 import ExampleUseCallback from "./pages/components/ExampleUseCallback/ExampleUseCallback";
 import CounterContextFn from "./pages/components/CouterContext/CouterContextFn";
+import FeesContext from "./Context/FeesContext";
+import FeesContextCmp from "./pages/components/FeesContextCmp/FeesContextCmp";
+import FeesList from "./pages/components/FeesList/FeesList";
 
 
 const RouteCom = ()=> {
@@ -18,6 +21,10 @@ const RouteCom = ()=> {
      
       <Route path = "/contact" element = {<Contact/>} exact = {true}/>
       <Route path = "/context" element = {<CounterContextFn/>} exact = {true}/>
+      <Route path="/feescontext/:action/:id" element={< FeesContextCmp/>} exact={true} />
+        <Route path="/feescontext/:action" element={< FeesContextCmp/>} exact={true} />
+        
+        <Route path="/feeslist" element={< FeesList/>} exact={true} />
       <Route path = "/" element = {<Home/>} exact = {true}/>
       <Route path="*" element={<div>Page not found</div>} />
   </Routes>
