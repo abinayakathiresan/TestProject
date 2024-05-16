@@ -31,7 +31,7 @@ const FeesContextCmp = ()=> {
             //dispatch(stuObj)
             //addStudent(stuObj);
 
-            const copyStudents = [...students];
+            let copyStudents = [...students];
             copyStudents.push(stuObj);
             setStudents(copyStudents);
             
@@ -40,7 +40,7 @@ const FeesContextCmp = ()=> {
            let existingStudent = {...studentObj,name,amount};
            //dispatch(editStudent(existingStudent));
            //editStudent(existingStudent);
-           const copyStudents = [...students];
+           let copyStudents = [...students];
             copyStudents = copyStudents.map((item)=> {
                 return (item.id == existingStudent.id ? existingStudent : item);
             });

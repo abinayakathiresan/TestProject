@@ -1,5 +1,6 @@
 import React, { useCallback, useState } from 'react';
 import FeesItem from '../FeesItem/FeesItem';
+import { TextField } from '@mui/material';
 //stu name, month, year, amt
 const Fees = () => {
   const[stuId, setId] = useState('');
@@ -57,7 +58,7 @@ console.log("testtttttttt");
         <input type = "hidden" value = {stuId}/>
       </div>
       <div>
-        <input type="text" onChange={(e) => setName(e.target.value)} value = {name}/>
+      <TextField id="outlined-basic" label = "name" variant="outlined" onChange={(e) => setName(e.target.value)} value = {name}/>
       </div>
        <div>
         <input type="month" onChange={(e) => setMonth(e.target.value)} value = {month}/>
